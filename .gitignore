@@ -1,0 +1,41 @@
+# Python cache and virtual environment
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+venv/
+env/
+
+# Jupyter notebooks (if any)
+*.ipynb_checkpoints
+
+# Environment variables and secrets
+.env
+.env.*
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Editor/IDE files
+.vscode/
+.idea/
+*.swp
+
+# Log files
+*.log
+
+# Render deployment build cache (if any)
+build/
+dist/
+*.egg-info/
+
+# Uploaded/tested image or output files
+*.jpg
+*.png
+*.jpeg
+*.webp
+*.gif
+
+# Zip backups
+*.zip
