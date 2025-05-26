@@ -55,3 +55,16 @@ async def analyze_image(
     contents = await file.read()
     result = get_nutrition_info_from_file(contents, description)
     return JSONResponse(content=result)
+
+
+
+
+
+@app.get("/", summary="Welcome")
+async def root():
+    return {
+        "message": "Welcome to the Krave AI Backend!",
+        "docs": "/docs",
+        "upload_endpoint": "/upload_image/",
+        "health check": "/ping"
+    }
